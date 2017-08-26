@@ -11,7 +11,7 @@
  * @subpackage Accelerate Marketing
  * @since Accelerate Marketing 2.0
  * 
- * 2017-08-25  JFK  Added featured-work-section
+ * 2017-08-25  JFK  Added featured-work Section
  * 
  */
 
