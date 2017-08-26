@@ -10,6 +10,9 @@
  * @package WordPress
  * @subpackage Accelerate Marketing
  * @since Accelerate Marketing 2.0
+ * 
+ * 2017-08-25  JFK  Added featured-work-section
+ * 
  */
 
 get_header(); ?>
@@ -32,15 +35,30 @@ get_header(); ?>
             <?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
                 <?php while (have_posts()) : the_post();
                     $image_1 = get_field('image_1');
+                    $image_2 = get_field('image_2');
+                    $image_3 = get_field('image_3');
                     $size = "medium";
                 ?>
                 <li class="individual-featured-work">
                     <figure>
                         <?php echo wp_get_attachment_image($image_1, $size); ?>
                     </figure>
-
-                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?>
-                        </a></h3>
+                        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?>  
+                        </a></h3> 
+                </li>
+                <li class="individual-featured-work">
+                    <figure>
+                       <?php echo wp_get_attachment_image($image_2, $size); ?>  
+                    </figure>
+                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?> 
+                        </a></h3>  
+                </li>
+                <li class="individual-featured-work">
+                    <figure>
+                        <?php echo wp_get_attachment_image($image_3, $size); ?>
+                    </figure>
+                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?>  
+                        </a></h3> 
                 </li>
                 <?php endwhile; ?>
             <?php wp_reset_query(); ?>
