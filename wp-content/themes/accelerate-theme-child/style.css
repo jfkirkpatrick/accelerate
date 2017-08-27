@@ -58,19 +58,26 @@
 
 ul  {
     list-style: none;
+    margin: 17px;
 }
 
 .featured-work h4 {
     text-align: center;
 }
 
-li .individual-featured-work {
+li.individual-featured-work {
     display: inline-block;
     max-width: 33%;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin: 3px;
 }
 
-li .individual-featured-work  h3, h4 {
+li.individual-featured-work  h3, h4 {
     text-align: center;
 }
+
+li.individual-featured-work {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ 

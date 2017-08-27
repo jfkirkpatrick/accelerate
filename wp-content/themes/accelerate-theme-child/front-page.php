@@ -47,7 +47,7 @@ get_header(); ?>
                     <figure>
                         <?php echo wp_get_attachment_image($image_1, $size); ?>
                       </figure>
-                    <h4 class="aligncenter"><?php if ($image1_title) { echo   $image1_title;  } ?></h4> 
+                    <h4><?php if ($image1_title) { echo   $image1_title;  } ?></h4> 
                 </li>
                 <li class="individual-featured-work">
                     <figure>
