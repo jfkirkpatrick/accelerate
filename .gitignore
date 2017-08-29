@@ -3,3 +3,4 @@
 wp-config.php
 .htaccess
 /wp-content/themes/nbproject/private/
+/wp-content/uploads/
