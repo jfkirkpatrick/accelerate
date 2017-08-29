@@ -12,6 +12,7 @@
  * @since Accelerate Marketing 2.0
  * 
  * 2017-08-25  JFK  Added featured-work Section
+ * 2017-08-28 JFK  Changed Button href to point to mailchimp-campaign page url
  * 
  */
 
@@ -22,7 +23,7 @@ get_header(); ?>
         <div class="homepage-hero">
             <div class="site-content">
                 <?php the_content(); ?>
-                <a class="button" href="<?php echo home_url(); ?>/blog">View Our Work</a>
+                <a class="button" href="<?php echo site_url(); ?>/case-studies/mailchimp-campaign">View Our Work</a>
             </div><!-- .site-content -->
         </div>
     <?php endwhile; // end of the loop. ?>
