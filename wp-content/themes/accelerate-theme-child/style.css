@@ -25,23 +25,23 @@
 }
 
 .blog-post {
-	width: 50%;
+    width: 50%;
 }
 
 .blog-post h4 {
-	color: #a6a6a6;
-	text-transform: uppercase;
+    color: #a6a6a6;
+    text-transform: uppercase;
 }
 
 .blog-post h2 {
-	font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 .read-more-link {
-	font-family: 'Montserrat';
-	font-weight: 700;
-	color: #45ac9d;
-	text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #45ac9d;
+    text-transform: uppercase;
 }
 
 .align-left {
@@ -53,7 +53,7 @@
 }
 
 .mailchimp-campaign img {
-     float: right;
+    float: right;
 }
 
 ul  {
@@ -98,4 +98,22 @@ div.case-study-images img {
     width: 60%;
     height: auto;
 }
- 
+
+.contact-form {
+    margin: 0 90px;
+    width: 600px;
+}
+
+
+div#nf-field-9-container.nf-.field-container.text-container,
+div#nf-field-9-wrap {
+    width: 300px;
+    padding-right: 38px;
+    float: left;
+}
+
+div#nf-field-10-wrap {
+    width: 300px;
+}
+
+

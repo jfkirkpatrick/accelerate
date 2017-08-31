@@ -1,0 +1,151 @@
+/**
+ * Admin styles
+ */
+ 
+/**
+ * Fields table
+ */
+.widefat .field-group-heading {
+	background-color: #f9f9f9;
+}
+
+.widefat .field-group-heading td {
+	padding-bottom: 4px;
+	padding-top: 15px;
+	border-top: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.widefat .field-group-heading:first-child td {
+	border-top: 0;
+}
+
+
+/**
+ * Hide title input on entries
+ */
+.post-type-af_entry #titlediv {
+	display: none;
+}
+
+#acf_after_title-sortables #acf-group_entry_data {
+	margin-top: 0;
+}
+
+
+/**
+ * Make room for the field selector on the email fields
+ */
+.acf-field .acf-input {
+	position: relative;
+}
+
+.af-field-dropdown.button {
+	position: relative;
+	display: none;
+}
+
+.acf-field-form-email-content .af-field-dropdown.button,
+.acf-field-form-success-message .af-field-dropdown.button {
+	display: inline-block;
+}
+
+.af-field-dropdown.button.floating {
+	display: inline-block;
+	position: absolute;
+	right: 3px;
+	top: 50%;
+	font-size: 12px;
+	line-height: 20px;
+	height: 22px;
+	margin-top: -11px;
+}
+
+.af-field-dropdown.button.floating:active {
+	z-index: 1000;
+}
+
+.af-field-dropdown .af-dropdown {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	min-width: 200px;
+	max-height: 400px;
+	overflow-y: scroll;
+	background: #f7f7f7;
+	border: 1px solid #ccc;
+	box-shadow: 0 1px 0 #ccc;
+	border-radius: 3px;
+	z-index: 100;
+}
+
+.af-field-dropdown.floating .af-dropdown {
+	left: auto;
+	right: 0;
+}
+
+.af-field-dropdown.open .af-dropdown {
+	display: block;
+}
+
+.af-field-dropdown .field-divider {
+	background: #fff;
+	height: 3px;
+	border-bottom: 1px solid #ccc;
+}
+
+.af-field-dropdown .af-dropdown .field-option {
+	padding: 8px 10px;
+	border-bottom: 1px solid #ccc;
+	font-weight: 500;
+}
+
+.af-field-dropdown .af-dropdown .field-option:last-child {
+	border-bottom: 0;
+}
+
+.af-field-dropdown .af-dropdown .field-option:hover {
+	background: #fff;
+}
+
+.af-field-dropdown .af-dropdown .field-option .field-name {
+	display: block;
+	line-height: 1;	
+}
+
+.af-field-dropdown .af-dropdown .field-option .field-type {
+	display: block;
+	color: #888;
+	margin-top: 3px;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1;
+}
+
+
+/**
+ * ACF Tabs (spacing, dashicons)
+ */
+.acf-tab-button .dashicons {
+	font-size: 16px;
+	height: auto;
+	margin-top: -4px;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.acf-tab-button[data-key="field_form_editing_tab"] {
+	margin-top: 10px;
+}
+
+
+/**
+ * Images in field labels
+ */
+.acf-field .acf-label img {
+	height: 16px;
+	vertical-align: middle;
+	margin-top: -3px;
+	margin-right: 6px;
+}
