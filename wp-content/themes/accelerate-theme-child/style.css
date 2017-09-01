@@ -116,4 +116,37 @@ div#nf-field-10-wrap {
     width: 300px;
 }
 
+div#nf-field-12-wrap {
+    float: right;
+}
+
+.headliner {
+    font-size: 15px;
+    font-family: "Montserrat";
+    color: rgb(58, 57, 57);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.713;
+    text-align: center;
+}
+
+.headliner-text {
+    font-size: 16.5px;
+    font-family: "OpenSans";
+    color: rgb(59, 59, 59);
+    line-height: 1.697;
+    text-align: center;
+}
+
+content-strategy-image {
+
+}
+
+.content-strategy-text {
+    font-size: 36.481px;
+    font-family: "OpenSans";
+    color: rgb(59, 59, 59);
+    line-height: 1.4;
+    text-align: left;
+}
 
