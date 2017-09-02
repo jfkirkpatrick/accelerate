@@ -1,6 +1,6 @@
 <?php
 /**
- * The About-Me Page
+ * The My About Page
  *
  * This is the template that displays the About Page.
  * Was created from the Page.php Template and modified as needed.
@@ -11,6 +11,7 @@
  * @since Accelerate Marketing 2.0
  * 
  * * 2017-08-31  JFK  Created about-me.php from child theme page.php
+ * * 2017-09-02 JFK Renamed to page-about.php
  */
 get_header();
 ?>
