@@ -6,6 +6,9 @@
  * @package WordPress
  * @subpackage Accelerate Theme
  * @since Accelerate Theme 1.1
+ * 
+ * * 2017-08-31  JFK  Created single-case-studies.php from child theme page.php
+ * 
  */
 get_header();
 ?>
@@ -30,7 +33,7 @@ get_header();
                     <h5><?php echo $services; ?></h5>
                     <h6>Client: <?php echo $client; ?></h6>
 
-    <?php the_content(); ?>
+                    <?php the_content(); ?>
 
                     <p><strong><a href="<?php echo $link; ?>"Site Link</a></strong></p>
                 </aside>
@@ -46,15 +49,15 @@ get_header();
                         echo wp_get_attachment_image($image_2, $size);
                     }
                     ?>
-            <?php
-            if ($image_3) {
-                echo wp_get_attachment_image($image_3, $size);
-            }
-            ?>
+                    <?php
+                    if ($image_3) {
+                        echo wp_get_attachment_image($image_3, $size);
+                    }
+                    ?>
                 </div>
             </article>
 
-<?php endwhile; // end of the loop.  ?>
+        <?php endwhile; // end of the loop.  ?>
     </div><!-- #content -->
 
 </div><!-- #primary -->

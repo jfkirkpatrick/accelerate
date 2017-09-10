@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Accelerate Marketing Child functions and definitions
  *
@@ -23,20 +24,33 @@
  * @package WordPress
  * @subpackage Accelerate Marketing
  * @since Accelerate Marketing 2.0
+ * 
+ * *  2017-08-07  JFK  Created functions.php for child theme to override main theme functions.php
+ * *  2017-08-07  JFK  Created create_custom_post_types functions and registered case_studies so
+ *          so Case Studies show up in Admin Menu
+ * *  2017-09-09 JFK  Registered market_strategies so Market Strategies show up in Admin Menu
  */
-
-function create_custom_post_types () {
-    register_post_type ('case_studies',
-            array (
-                'labels' => array (
-                    'name' => __('Case Studies'),
-                    'singular_name' => __('Case Study')
-                    ),
-                'public' => true,
-                'has_archive' => true,
-                'rewrite' => array('slug' => 'case-studies'),
+function create_custom_post_types() {
+    register_post_type('case_studies', array(
+        'labels' => array(
+            'name' => __('Case Studies'),
+            'singular_name' => __('Case Study')
+        ),
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'case-studies'),
             )
-            );
+    );
+    register_post_type('our_services', array(
+        'labels' => array(
+            'name' => __('Our Services'),
+            'singular_name' => __('Our Service')
+        ),
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'our-services'),
+            )
+    );
 }
 
-add_action ('init', 'create_custom_post_types');
+add_action('init', 'create_custom_post_types');

@@ -137,11 +137,54 @@ div#nf-field-12-wrap {
     text-align: center;
 }
 
-.content-strategy-text {
-    font-size: 36.481px;
+.about-page-sections {
+    width: 950px;
+    margin-left: 132px;
+}
+
+.our-services {
+    text-align: center;
+    font-size: 15.592px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    width: 500px;
+}
+
+.our-services-text  {
+    font-size: 16.5px;
     font-family: "OpenSans";
-    color: rgb(59, 59, 59);
-    line-height: 1.4;
+    width: 480px;
+    text-align: center;
+}
+
+.content-strategy-main {
+    width: 950px;
+}
+
+.content-strategy-title {
+    font-size: 16.5px;
+    font-family: "OpenSans";
     text-align: left;
+    font-weight: bold;
+}
+
+.content-strategy-image-left {
+    float: left;
+    width: 216px;
+    height: 216px;
+}
+
+.content-strategy-image-right {
+    float: right;
+    width: 216px;
+    height: 216px;
+}
+
+.content-strategy-text {
+    font-size: 16.5px;
+    font-family: "OpenSans";
+    width: 600px; 
+    padding-top: 60px;
+    float: right;
 }
 

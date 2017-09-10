@@ -18,28 +18,32 @@ get_header();
 
 <div id="primary" class="site-content">
     <div class="main-content" role="main">
-        <section class="about-page">
-            <div class="site-content">
+        <section>
+            <article>
                 <div class="about-page-sections">              
                     <p class="our-services">Our Services</p>
-                    <p class="our-services-text">We take pride in our clients and the content we create for them.  Here is a brief overview of our offered services</p> 
-                    <div class="content-stratery">
-                        <div class="content-strategy-image">
-                            <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2017/08/bullseye.png>"></img>
-                        </div> 
-                        <div>
-                            <p class="content-strategy-text">Bacon ipsum dolor sit amet strip steak jowl pancetta, cow turkey salami saugage fastback boudin bitong frankfurter shoulder pork turducken spare ribs</p>
+                    <p class="our-services-text">We take pride in our clients and the content we create for them.</br>
+                        Here is a brief overview of our offered services</p> 
+                    <?php
+                    while (have_posts()) : the_post();
+                        $content_strategy_text = get_field('content_strategy_text');
+                        //                      $content_strategy_image = get_field('content_strategy_image');
+                        $size = "medium";
+                        ?>
+                        <div class="content-strategy-images">
+                            <div class="content-strategy-image">
+                                <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2017/08/bullseye.png"></img>
+                            </div> 
 
+                            <p class="content_strategy_text"><?php echo $content_strategy_text; ?></p>
                         </div>
-                    </div> <!-- End of Content Strategy -->
-                </div> <!-- End of About Page Sections -->
-            </div> <!-- End of Site Content -->
+                </article>
+
+            <?php endwhile; // end of the loop.   ?>
         </section><!-- End of About Page Section -->
-
     </div><!-- #content -->
-
-</div><!-- #primary -->
+</div><!-- End of Main Content Class  -->
+</div><!-- End of Primary Class  -->
 
 <?php get_footer(); ?>
-
 
