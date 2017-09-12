@@ -27,8 +27,8 @@
  * 
  * *  2017-08-07  JFK  Created functions.php for child theme to override main theme functions.php
  * *  2017-08-07  JFK  Created create_custom_post_types functions and registered case_studies so
- *          so Case Studies show up in Admin Menu
- * *  2017-09-09 JFK  Registered market_strategies so Market Strategies show up in Admin Menu
+ *          so Case Studies shows up in Admin Menu
+ * *  2017-09-09 JFK  Registered our_services so Our Services shows up in Admin Menu
  */
 function create_custom_post_types() {
     register_post_type('case_studies', array(
@@ -47,7 +47,7 @@ function create_custom_post_types() {
             'singular_name' => __('Our Service')
         ),
         'public' => true,
-        'has_archive' => true,
+        'has_archive' => false,
         'rewrite' => array('slug' => 'our-services'),
             )
     );

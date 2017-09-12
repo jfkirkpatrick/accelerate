@@ -16,6 +16,13 @@
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 }
 
+#page-404 {
+    background: url("img/earth-from-space-nasa-wallpaper-2.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+}
+
+.page-content-404 p{
+    font-weight: 700;
+}
 #masthead {
     background: none repeat scroll 0 0 #45ac9d;
 }
@@ -137,9 +144,15 @@ div#nf-field-12-wrap {
     text-align: center;
 }
 
+article.content-strategy-main {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 .about-page-sections {
     width: 950px;
-    margin-left: 132px;
+    padding: 40px;
 }
 
 .our-services {
@@ -161,17 +174,31 @@ div#nf-field-12-wrap {
     width: 950px;
 }
 
+.content-strategy-content {
+    width: 950px;
+}
+
 .content-strategy-title {
     font-size: 16.5px;
     font-family: "OpenSans";
     text-align: left;
     font-weight: bold;
+    padding-left: 20px;
+}
+
+.content-strategy-text {
+    font-size: 16.5px;
+    font-family: "OpenSans";
+    padding-left: 20px;
+    display: inline-block;
 }
 
 .content-strategy-image-left {
     float: left;
     width: 216px;
     height: 216px;
+    margin: 0 0 10px 10px;
+    display: inline-block;
 }
 
 .content-strategy-image-right {
@@ -179,12 +206,3 @@ div#nf-field-12-wrap {
     width: 216px;
     height: 216px;
 }
-
-.content-strategy-text {
-    font-size: 16.5px;
-    font-family: "OpenSans";
-    width: 600px; 
-    padding-top: 60px;
-    float: right;
-}
-
