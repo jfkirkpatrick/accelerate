@@ -15,11 +15,11 @@
  * 2017-08-28 JFK  Changed Button href to point to mailchimp-campaign page url
  * 
  */
-
-get_header(); ?>
+get_header();
+?>
 
 <section class="home-page">
-    <?php while ( have_posts() ) : the_post(); ?>
+    <?php while (have_posts()) : the_post(); ?>
         <div class="homepage-hero">
             <div class="site-content">
                 <?php the_content(); ?>
@@ -29,13 +29,14 @@ get_header(); ?>
     <?php endwhile; // end of the loop. ?>
 </section><!-- home-page -->
 
-<section class="featured-work">
+<section class="featured-work clearfix">
     <div class="site-content">
         <h4>Featured Work</h4>
         <div>
-        <ul class="homepage-featured-work">
-            <?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
-                <?php while (have_posts()) : the_post();
+            <ul class="homepage-featured-work">
+                <?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
+                <?php
+                while (have_posts()) : the_post();
                     $image_1 = get_field('image_1');
                     $image_2 = get_field('image_2');
                     $image_3 = get_field('image_3');
@@ -43,28 +44,34 @@ get_header(); ?>
                     $image2_title = get_the_title(get_field('image_2'));
                     $image3_title = get_the_title(get_field('image_3'));
                     $size = "medium";
-                ?>
-                <li class="individual-featured-work">
-                    <figure>
-                        <?php echo wp_get_attachment_image($image_1, $size); ?>
-                      </figure>
-                    <h4><?php if ($image1_title) { echo   $image1_title;  } ?></h4> 
-                </li>
-                <li class="individual-featured-work">
-                    <figure>
-                       <?php echo wp_get_attachment_image($image_2, $size); ?>  
-                    </figure>
-                    <h4><?php if ($image2_title) { echo   $image2_title; } ?></h4>  
-                </li>
-                <li class="individual-featured-work">
-                    <figure>
-                       <?php echo wp_get_attachment_image($image_3, $size); ?>  
-                    </figure>
-                    <h4><?php if ($image3_title) {  echo   $image3_title;  } ?></h4> 
-                </li>
-                <?php endwhile; ?>
-            <?php wp_reset_query(); ?>
-        </ul>
+                    ?>
+                    <li class="individual-featured-work">
+                        <figure>
+    <?php echo wp_get_attachment_image($image_1, $size); ?>
+                        </figure>
+                        <h4><?php if ($image1_title) {
+        echo $image1_title;
+    } ?></h4> 
+                    </li>
+                    <li class="individual-featured-work">
+                        <figure>
+    <?php echo wp_get_attachment_image($image_2, $size); ?>  
+                        </figure>
+                        <h4><?php if ($image2_title) {
+        echo $image2_title;
+    } ?></h4>  
+                    </li>
+                    <li class="individual-featured-work">
+                        <figure>
+                    <?php echo wp_get_attachment_image($image_3, $size); ?>  
+                        </figure>
+                        <h4><?php if ($image3_title) {
+                    echo $image3_title;
+                } ?></h4> 
+                    </li>
+<?php endwhile; ?>
+<?php wp_reset_query(); ?>
+            </ul>
         </div>
     </div>
 </section><!-- End of Featured Work Section -->
@@ -73,14 +80,14 @@ get_header(); ?>
     <div class="site-content">
         <div class="blog-post">
             <h4>From the Blog</h4>
-            <?php query_posts('posts_per_page=1'); ?>
-                <?php while (have_posts()) : the_post(); ?>
-            <h2><?php the_title(); ?></h2>
-            <?php the_excerpt(); ?>
-                <?php endwhile; ?>
-            <?php wp_reset_query(); ?>
+<?php query_posts('posts_per_page=1'); ?>
+<?php while (have_posts()) : the_post(); ?>
+                <h2><?php the_title(); ?></h2>
+    <?php the_excerpt(); ?>
+<?php endwhile; ?>
+<?php wp_reset_query(); ?>
         </div>
-    
+
     </div>
 </section><!-- Recent Posts -->
 

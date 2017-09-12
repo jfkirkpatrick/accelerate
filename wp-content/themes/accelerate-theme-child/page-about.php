@@ -32,7 +32,7 @@ get_header();
                     $size = "medium";
                     ?>
 
-                    <article class="content-strategy-main">     
+                    <article class="content-strategy-main clearfix">     
                         <div class="content-strategy-image-left">
                             <?php
                             if ($services_image) {
@@ -45,7 +45,7 @@ get_header();
                             </div>
                         </div>
                     </article>
-                    <br style="clear: both;" />
+                    <br>
                 <?php endwhile; // end of the loop.    ?>
                 <?php wp_reset_query(); ?>
             </div><!-- End of About Page Div -->
