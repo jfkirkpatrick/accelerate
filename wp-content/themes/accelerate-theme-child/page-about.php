@@ -32,20 +32,20 @@ get_header();
                     $size = "medium";
                     ?>
 
-                    <article class="content-strategy-main clearfix">     
-                        <div class="content-strategy-image-left">
-                           <figure class="content-strategy-image">
+                    <article class="content-strategy-main-left clearfix">     
+                        
+                           <figure class="content-strategy-image-left">
                             <?php
                             if ($services_image) {
                                 echo wp_get_attachment_image($services_image, $size);
                             }
                             ?>
                             </figure>
-                            
+                            <div class="content-strategy-content">
                                 <p class="content-strategy-title"><?php echo $services_title; ?> </p>
                                 <p class="content-strategy-text"><?php echo $services_text; ?> </p>
-                        
-                        </div>
+                            </div>
+            
                     </article>
                     <br>
                 <?php endwhile; // end of the loop.    ?>

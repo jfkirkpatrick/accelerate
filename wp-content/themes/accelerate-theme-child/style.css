@@ -170,16 +170,15 @@ article.content-strategy-main {
     text-align: center;
 }
 
-.content-strategy-main {
-    width: 950px;
+.content-strategy-main-left {
+    float: left;
 }
 
-.content-strategy-image {
-    width: 30%; 
-}
-
-.content-strategy-content {
-    width: 70%;
+.content-strategy-image-left {
+    width: 25%; 
+    float: left;
+    padding-right: 20px;
+    margin-bottom: 60px;
 }
 
 .content-strategy-title {
@@ -194,15 +193,6 @@ article.content-strategy-main {
     font-size: 16.5px;
     font-family: "OpenSans";
     padding-left: 20px;
-}
-
-.content-strategy-image-left {
-     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    float: left;
-    width: 950px;
-    display: inline-block;
 }
 
 .content-strategy-image-right {
