@@ -19,7 +19,7 @@ get_header();
         <section>
             <div class="about-page-sections">              
                 <p class="our-services">Our Services</p>
-                <p class="our-services-text">We take pride in our clients and the content we create for them.</br>
+                <p class="our-services-text">We take pride in our clients and the content we create for them.<br>
                     Here is a brief overview of our offered services</p> 
 
                 <?php query_posts('post_type=our_services&orderby=title&order=ASC'); ?>
@@ -34,15 +34,17 @@ get_header();
 
                     <article class="content-strategy-main clearfix">     
                         <div class="content-strategy-image-left">
+                           <figure class="content-strategy-image">
                             <?php
                             if ($services_image) {
                                 echo wp_get_attachment_image($services_image, $size);
                             }
                             ?>
-                            <div class="content-strategy-content">
+                            </figure>
+                            
                                 <p class="content-strategy-title"><?php echo $services_title; ?> </p>
                                 <p class="content-strategy-text"><?php echo $services_text; ?> </p>
-                            </div>
+                        
                         </div>
                     </article>
                     <br>

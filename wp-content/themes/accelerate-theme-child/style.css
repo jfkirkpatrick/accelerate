@@ -174,8 +174,12 @@ article.content-strategy-main {
     width: 950px;
 }
 
+.content-strategy-image {
+    width: 30%; 
+}
+
 .content-strategy-content {
-    width: 950px;
+    width: 70%;
 }
 
 .content-strategy-title {
@@ -190,19 +194,19 @@ article.content-strategy-main {
     font-size: 16.5px;
     font-family: "OpenSans";
     padding-left: 20px;
-    display: inline-block;
 }
 
 .content-strategy-image-left {
+     -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     float: left;
-    width: 216px;
-    height: 216px;
-    margin: 0 0 10px 10px;
+    width: 950px;
     display: inline-block;
 }
 
 .content-strategy-image-right {
     float: right;
-    width: 216px;
-    height: 216px;
+    width: 950px;
+    display: inline-block;
 }
