@@ -23,6 +23,12 @@ get_header(); ?>
 				</div><!-- .site-content -->
 			</div>
 		<?php endwhile; // end of the loop. ?>
-</section><!-- .home-page -->
+</section><!-- Class = home-page -->
+
+<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+<div id="secondary" class="widget-area" role="complementary">
+	<?php dynamic_sidebar( 'sidebar-2' ); ?>
+</div>
+<?php endif; ?>
 
 <?php get_footer(); ?>

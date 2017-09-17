@@ -29,7 +29,9 @@
  * *  2017-08-07  JFK  Created create_custom_post_types functions and registered case_studies so
  *          so Case Studies shows up in Admin Menu
  * *  2017-09-09 JFK  Registered our_services so Our Services shows up in Admin Menu
+ * *  2017-09-17 JFK  Added Sidebar Widget for Twitter and Registered
  */
+
 function create_custom_post_types() {
     register_post_type('case_studies', array(
         'labels' => array(
@@ -54,3 +56,17 @@ function create_custom_post_types() {
 }
 
 add_action('init', 'create_custom_post_types');
+
+function accelerate_theme_child_widget_init() {
+register_sidebar( array(
+    'name' =>__( 'Homepage sidebar', 'accelerate-theme-child'),
+    'id' => 'sidebar-2',
+    'description' => __( 'Appears on the static front page template', 'accelerate-theme-child' ),
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+) );
+}
+
+add_action( 'widgets_init', 'accelerate_theme_child_widget_init' );
