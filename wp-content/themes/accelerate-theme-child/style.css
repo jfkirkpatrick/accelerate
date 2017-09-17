@@ -16,6 +16,14 @@
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 }
 
+.homepage-hero h4 {
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: 1.4em;
+    font-weight: normal;
+    margin: 0 0 3em;
+}
+
 #page-404 {
     background: url("img/earth-from-space-nasa-wallpaper-2.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 }
@@ -29,6 +37,34 @@
 
 .button {
     background: none repeat scroll 0 0 #45ac9d;
+}
+
+.call-to-action {
+    display: -webkit-flex;
+    display: flex;
+    width: 950px;
+    height: 100px;
+    border: 1px solid slategray;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action-text {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.call-to-action-button {
+    background-color: #45ac9d; 
+    border: none;
+    color: white;
+    padding: 15px 32px;    
+    text-decoration: none;
+    font-size: 16px;
+    height: 60px;
+    width: 250px;
+    margin-left: 20px;
 }
 
 .blog-post {
@@ -57,6 +93,11 @@
 
 .align-right {
     float: right;
+}
+
+.align-center {
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .mailchimp-campaign img {
@@ -160,25 +201,42 @@ article.content-strategy-main {
     font-size: 15.592px;
     font-family: "Montserrat";
     font-weight: bold;
-    width: 500px;
+    margin: 0 auto;
 }
 
 .our-services-text  {
     font-size: 16.5px;
     font-family: "OpenSans";
-    width: 480px;
     text-align: center;
+    margin: 0 auto;
 }
 
-.content-strategy-main-left {
-    float: left;
+.content-strategy-main {
+    margin-top: 20px;
 }
 
 .content-strategy-image-left {
     width: 25%; 
     float: left;
+    display: inline-block;
     padding-right: 20px;
-    margin-bottom: 60px;
+}
+
+.content-strategy-content-left {
+    width: 70%;
+    float: left;
+}
+
+.content-strategy-image-right {
+    float: right;
+    width: 25%;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.content-strategy-content-right {
+    width: 70%;
+    float: right;
 }
 
 .content-strategy-title {
@@ -193,10 +251,6 @@ article.content-strategy-main {
     font-size: 16.5px;
     font-family: "OpenSans";
     padding-left: 20px;
+    padding-right: 20px;
 }
 
-.content-strategy-image-right {
-    float: right;
-    width: 950px;
-    display: inline-block;
-}
