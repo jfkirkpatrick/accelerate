@@ -39,6 +39,10 @@
     background: none repeat scroll 0 0 #45ac9d;
 }
 
+.mc4wp-form-fields input[type="submit"] {
+	height: auto;
+}
+
 .call-to-action {
     display: -webkit-flex;
     display: flex;
@@ -69,6 +73,7 @@
 
 .blog-post {
     width: 50%;
+    float: left;
 }
 
 .blog-post h4 {
@@ -78,6 +83,15 @@
 
 .blog-post h2 {
     font-size: 1.5em;
+}
+
+.tweets {
+    padding-top: 100px;
+}
+
+div.twitter-posts {
+    width: 50%;
+    float: left;
 }
 
 .read-more-link {
@@ -253,4 +267,3 @@ article.content-strategy-main {
     padding-left: 20px;
     padding-right: 20px;
 }
-

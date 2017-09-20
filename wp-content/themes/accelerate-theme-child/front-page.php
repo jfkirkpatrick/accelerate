@@ -79,22 +79,24 @@ get_header();
 <section class="recent-posts clearfix">
     <div class="site-content">
         <div class="blog-post">
-            <h4>From the Blog</h4>
-<?php query_posts('posts_per_page=1'); ?>
-<?php while (have_posts()) : the_post(); ?>
+            <h3>From the Blog</h3>
+            <?php query_posts('posts_per_page=1'); ?>
+            <?php while (have_posts()) : the_post(); ?>
                 <h2><?php the_title(); ?></h2>
-    <?php the_excerpt(); ?>
-<?php endwhile; ?>
-<?php wp_reset_query(); ?>
+                <?php the_excerpt(); ?>
+            <?php endwhile; ?>
+            <?php wp_reset_query(); ?>
         </div>
-
+        <div class="twitter-posts">
+            <?php if (is_active_sidebar('sidebar-2')) : ?>
+                <div id="secondary" class="widget-area" role="complementary">
+                    <?php dynamic_sidebar( 'sidebar-2' ); ?>
+                </div>
+            <?php endif; ?>
+        </div><!-- Recent Twitter Posts -->
     </div>
 </section><!-- Recent Posts -->
 
-<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
-<div id="secondary" class="widget-area" role="complementary">
-	<?php dynamic_sidebar( 'sidebar-2' ); ?>
-</div>
-<?php endif; ?>
+
 
 <?php get_footer(); ?>
