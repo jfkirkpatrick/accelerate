@@ -1,6 +1,6 @@
 # skillcrush-accelerate-theme
 
-Repo for My Skillcrush Accelerate Theme
+Repo for My version of the Skillcrush Accelerate Theme
 
 This theme was originally downloaded from Skillcrush and modified by me.
 
